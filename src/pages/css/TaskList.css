@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border-style: hidden;
+  padding: 10px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  box-shadow: 1px 0px 10px rgba(87, 181, 175, 0.6);
+  border-radius: 25px;
+}
+
+
+.searchbar{
+  border-bottom: 1px solid #CFCCCC;
+  padding: 0px 5px 0px 5px;
+  }
+
+  .search_input{
+  color: white;
+  border: 0;
+  width: 100%;
+  outline: 0;
+  background: none;
+  caret-color: "#fff";
+  }
+
+  .search_input::placeholder{
+    color: #CFCCCC;
+  }

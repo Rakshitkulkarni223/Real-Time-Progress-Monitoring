@@ -45,7 +45,7 @@ It contains a table view that contains all tasks ( active and completed ) where 
 - There is a search bar on the widget where we will be able to search for a particular task.
 
 <p align="center">
-  <img width="460" height="300" src="./assets/navBar.png">
+  <img width="460" height="300" src="./assets/allTasks.png">
 </p>
 
 #####  Pick up where you left off 

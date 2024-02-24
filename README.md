@@ -60,7 +60,7 @@ This is the most important widget where a user will be able to see in which topi
 
 Real-time Progress Monitoring requires [Node.js](https://nodejs.org/) v10+ to run.
 
-Install the dependencies and start the server.
+Clone the repository and Install the dependencies
 
 ```sh
 git clone https://github.com/Rakshitkulkarni223/Real-Time-Progress-Monitoring.git

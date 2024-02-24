@@ -7,14 +7,14 @@ A progress dashboard of tasks provides a visual representation of the status and
 
 Created a dataset in JSON format by assuming that the data of the user already exists.
 
-> tasks<Array>:  [
-> name<String>,
-> category<String>,
-> timeTaken<Number>,
-> avgTimeRequired<Number>,
-> status<String>,
-> improvementNeeded<String>,
-> ]
+ tasks<Array>:  [<br/>
+ name<String>,<br/>
+ category<String>,<br/>
+ timeTaken<Number>,<br/>
+ avgTimeRequired<Number>,<br/>
+ status<String>,<br/>
+ improvementNeeded<String>,<br/>
+ ]<br/>
 
 Here, a task is a key that accepts an array as a value. The array contains mainly these fields,
 - ###### [name]: Task name.

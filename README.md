@@ -45,7 +45,7 @@ It contains a table view that contains all tasks ( active and completed ) where 
 - There is a search bar on the widget where we will be able to search for a particular task.
 
 <p align="center">
-  <img width="75%" height="50%" src="./assets/allTasks.mov">
+  <img width="75%" height="50%" src="./assets/allTasks.gif">
 </p>
 
 #####  Pick up where you left off 
@@ -55,7 +55,7 @@ It helps users view the incompleted/active tasks. So a user will be able to navi
 - Widget with background color green, left border color red, and an icon caret down with red color background to identify that time spent on a task is equal to the time required to complete the task.
 
 <p align="center">
-  <img width="75%" height="50%" src="./assets/pickup.png">
+  <img width="75%" height="50%" src="./assets/pickup.gif">
 </p>
 
 ##### Time Spent On Tasks 

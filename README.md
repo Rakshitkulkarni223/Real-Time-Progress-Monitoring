@@ -7,14 +7,9 @@ A progress dashboard of tasks provides a visual representation of the status and
 
 Created a dataset in JSON format by assuming that the data of the user already exists.
 
- tasks<Array>:  [<br/>
- name<String>,<br/>
- category<String>,<br/>
- timeTaken<Number>,<br/>
- avgTimeRequired<Number>,<br/>
- status<String>,<br/>
- improvementNeeded<String>,<br/>
- ]<br/>
+<p align="center">
+  <img width="30%" height="30%" src="./assets/dataset.png">
+</p>
 
 
 Here, a task is a key that accepts an array as a value. The array contains mainly these fields,

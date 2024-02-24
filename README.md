@@ -33,6 +33,10 @@ The dashboard contains a nav bar where we will see the user detail at the top ri
 - [Total time spent on tasks]: Sum of time taken to complete tasks or yet to complete.
 - [Completed vs Total tasks]: It is a ratio of the number of completed tasks to total tasks.
 
+<p align="center">
+  <img width="460" height="300" src="https://picsum.photos/460/300">
+</p>
+
 ##### All tasks
 It contains a table view that contains all tasks ( active and completed ) where fields in the dataset section are mapped to columns of the table. Color codes to identify tasks by status,
 - Active tasks: white

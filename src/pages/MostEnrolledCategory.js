@@ -10,7 +10,7 @@ const MostEnrolledCategory = () => {
                 background: 'rgb(22,26,45)',
                 borderColor: '#fff'
             }}>
-                <h6 className="m-0 font-weight-bold text-light">Remaining Active Tasks In Each Categories</h6>
+                <h6 className="m-0 font-weight-bold text-light">Remaining Active Tasks In Each Category</h6>
             </div>
             <div className="card-body">
                 <div className="chart-area" id="second-row" style={{

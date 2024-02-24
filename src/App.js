@@ -40,7 +40,7 @@ export default function App() {
                 <SingleScoreWidget title="Total Tasks" score={totalTasks} icon="fa fa-tasks" />
                 <SingleScoreWidget title="Completed Tasks" score={taskCompletedCount} icon="fa fa-list" />
                 <SingleScoreWidget title="Total Time Spent on Tasks" score={timeTakenToComplete} icon="fa fa-clock" />
-                <ProgressBarWidget title="Active vs Completed Tasks" score1={taskCompletedCount} score2={totalTasks} />
+                <ProgressBarWidget title="Completed vs Total Tasks" score1={taskCompletedCount} score2={totalTasks} />
               </div>
 
 

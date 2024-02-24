@@ -19,7 +19,7 @@ const NavBar = () => {
                 <a className="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div id="navbar-profile" className="">
                         <span className="mr-2 d-none d-lg-inline text-light small">Rakshit Kulkarni</span>
-                        <img className="img-profile rounded-circle" src="https://raw.githubusercontent.com/damartripamungkas/task-dashboard/main/img/undraw_profile.svg" />
+                        <img className="img-profile rounded-circle" src="https://i.pinimg.com/originals/7d/34/d9/7d34d9d53640af5cfd2614c57dfa7f13.png" />
                     </div>
                 </a>
             </li>

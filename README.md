@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Real-time Progress Monitoring
+##### Team Name: rakshitkulkarni2002_Team
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A progress dashboard of tasks provides a visual representation of the status and progress of various tasks within a project or workflow. In any project or workflow, keeping track of task progress is crucial for ensuring timely completion. It helps an individual identify bottlenecks, prioritize the work, track performance, and enhance continuous improvement.
 
-## Available Scripts
+## Dataset
 
-In the project directory, you can run:
+Created a dataset in JSON format by assuming that the data of the user already exists.
 
-### `npm start`
+> tasks<Array>:  [
+> name<String>,
+> category<String>,
+> timeTaken<Number>,
+> avgTimeRequired<Number>,
+> status<String>,
+> improvementNeeded<String>,
+> ]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Here, a task is a key that accepts an array as a value. The array contains mainly these fields,
+- ###### [name]: Task name.
+- ###### [category]: The task belongs to which category
+- ###### [timeTaken]: How much time a user have taken to complete or yet to complete the task.
+- ###### [avgTimeRequired]: The actual time required to complete the task which has already been set by the admin.
+- ###### [status]: The status of the task which is completed or not completed in the form of “YES” and “NO” respectively.
+- ###### [imrovementNeeded]: In this field, we have to calculate based on timeTaken and avgTimeRequired fields, i.e. if avgTimeRequired > timetaken this field will be set to “YES” or else “NO”.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+The dashboard contains a nav bar where we will see the user detail at the top right corner, in the body of the page in the first row it mainly contains four widgets,
+- [Total tasks]: Total Number of enrolled tasks.
+- [Completed tasks]: Number of tasks whose status is “YES” which defines that task is completed.
+- [Total time spent on tasks]: Sum of time taken to complete tasks or yet to complete.
+- [Completed vs Total tasks]: It is a ratio of the number of completed tasks to total tasks.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### All tasks
+It contains a table view that contains all tasks ( active and completed ) where fields in the dataset section are mapped to columns of the table. Color codes to identify tasks by status,
+- Active tasks: white
+- Completed tasks: light blue
+- Tasks with Improvement needed (NO) mapped green and with (YES) mapped to red color for imrovementNeeded values in - the table.
+- There is a search bar on the widget where we will be able to search for a particular task.
 
-### `npm run build`
+#####  Pick up where you left off 
+It helps users view the incompleted/active tasks. So a user will be able to navigate to the task by clicking on the view task button. This widget contains sub widgets where it has been categorized into three groups,
+- Widget with background color green, left border color green and an icon caret up with green color background to  identify that time spent on a task is less than the time required to complete the task.
+- Widget with background color red, left border color red, and an icon caret down with red color background to - identify that time spent on a task is greater than the time required to complete the task.
+- Widget with background color green, left border color red, and an icon caret down with red color background to identify that time spent on a task is equal to the time required to complete the task.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### Time Spent On Tasks 
+It is a graphical visualization of a line chart with two lines one is for time spent on tasks and another one for actual time required for the task.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### Total Time vs Time Taken (in hrs)
+It is a graphical visualization of a donut chart with two parts one is for the sum of time spent on tasks and another one is for the sum of all actual time required for the task.
+##### Remaining Active Tasks In Each Category
+The categories are sorted based on the values/percentage. Where the values represent how much percentage of the tasks are completed to enrolled tasks in that category. If it is 100% then no task is completed in that category. If the percentage is below 35 progress bar is filled with green, if it is between 35 to 70 then yellow, If it is above 70 then red. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### Areas Of Improvement
+This is the most important widget where a user will be able to see in which topic he/she is lacking. The representation of the widget contains nested widgets where each sub-widget has a category name and how many hours are behind or ahead of the expected time to complete all tasks in that category. If it is ahead then it distinguished as green color i.e. progress, if it is behind then red.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Real-time Progress Monitoring requires [Node.js](https://nodejs.org/) v10+ to run.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install the dependencies and start the server.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+git clone https://github.com/Rakshitkulkarni223/Real-Time-Progress-Monitoring.git
+cd Real-Time-Progress-Monitoring
+npm install
+```
+To start the server run this command
+```sh
+npm start
+```
+Server will run on this port i.e. 30000
+```sh
+http://localhost:3000/
+```
